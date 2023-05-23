@@ -3,7 +3,7 @@ import './SearchBox.css';
 
 export default function SearchBox() {
     const [cityName, setCityName] = useState('');
-    const [forecasts, setForecasts] = useState('');
+    const [forecasts, setForecasts] = useState([]);
 
 
     const handleKeyDown = async (event) => {
