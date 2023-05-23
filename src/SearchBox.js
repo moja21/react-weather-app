@@ -3,7 +3,7 @@ import './SearchBox.css';
 
 export default function SearchBox() {
     const [cityName, setCityName] = useState('');
-    const [forecasts, setForcasts] = useState('');
+    const [forecasts, setForecasts] = useState('');
 
 
     const handleKeyDown = async (event) => {
@@ -16,7 +16,7 @@ export default function SearchBox() {
             }
             const data = await response.json();
             console.log(data.forecast.forecastday)
-            setForcasts(data.forecast.forecastday)
+            setForecasts(data.forecast.forecastday)
            }
          catch(err){
             console.error(err)
